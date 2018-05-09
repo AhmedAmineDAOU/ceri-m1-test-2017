@@ -10,10 +10,7 @@ public class IGameStateTest {
 		
 	}
 	
-	@Test
-	public void testExploreArea(){
-		
-	}
+	
 	@Test
 	public void testGetProgression(){
 		
