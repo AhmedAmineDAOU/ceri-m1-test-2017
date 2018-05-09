@@ -5,12 +5,12 @@ import org.junit.Test;
 
 public class IEnvironmentProviderTest {
 	@Test
-	void testGetAvailableEnvironments(){
+	public void testGetAvailableEnvironments(){
 		
 		
 	}
 	@Test
- 	void testGetEnvironment(){
+	public void testGetEnvironment(){
 		
 		
 	}
