@@ -30,11 +30,6 @@ public class IGameStateTest {
 		assertEquals(1, iGameState.getProgression());
 	}
 	
-	/*@Test
-	public void testSpecialLevel(){
-		ISpecie iSpecie = ISpecieTest.getISpecieTest();
-		when(iGameState.getSpecieLevel(iSpecie)).thenReturn(SpecieLevel.CHAMPION);
-		assertEquals(SpecieLevel.CHAMPION, iGameState.getSpecieLevel(iSpecie));
-}*/
+	
 
 }

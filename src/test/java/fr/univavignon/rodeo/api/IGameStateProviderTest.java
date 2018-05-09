@@ -22,19 +22,6 @@ public class IGameStateProviderTest {
 		assertEquals(createMock().get("name"),gameState);
 	}
 
-	@Test
-	public void testSave() {
-
-	}
 	
-	@Test
-	public void  testExploreArea(){
-		
-	}
-	
-	@Test
-	public void testCatchAnimal(){
-		
-	}
 	
 }
