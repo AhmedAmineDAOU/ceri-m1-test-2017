@@ -6,24 +6,25 @@ import org.junit.Test;
 public class IAnimalTest  {
 
 	@Test
- 	void testgetXP(){
+	public void testgetXP(){
 		
 		
 	}
 	
 	@Test
- 	void testIsBoss(){
+	public void testIsBoss(){
 		
 		
 	}
 	@Test
- 	void testIsEndangered(){
+	public void testIsEndangered(){
 		
 		
 	}
 	@Test
- 	void testIsSecret(){
+	public void testIsSecret(){
 		
 		
 	}
+	
 }

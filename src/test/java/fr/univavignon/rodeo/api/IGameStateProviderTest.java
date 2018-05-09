@@ -6,16 +6,13 @@ import org.junit.Test;
 public class IGameStateProviderTest {
 
 	@Test
-	void testCatchAnimal(IAnimal animal){
+	public void testGet(){
 		
 	}
 	@Test
-	void testExploreArea(){
+	public void testSave(){
 		
 	}
- 	void testGetProgression(){
- 		
- 	}
 	
 	
 }
