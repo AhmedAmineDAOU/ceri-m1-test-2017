@@ -10,6 +10,7 @@ public class ISpecieTest  {
 	public void testGetAnimals(){
 		
 	}
+	
 	@Test
 	public void testGetArea(){
 		
