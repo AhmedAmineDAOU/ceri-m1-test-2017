@@ -18,9 +18,10 @@ public class IAnimalTest  {
 		Mockito.when(animalMock.isBoss()).thenReturn(boss);
 		return animalMock;
 }
+	
+	
 	protected IAnimal createMock(){
 		return createMock(1899,true,false,true);
-	
 		
 	}
 		
@@ -34,20 +35,22 @@ public class IAnimalTest  {
 	
 	@Test
 	public void testIsBoss(){
-		
+		IAnimal mockAnimal=createMock();
+		assertEquals(true,mockAnimal.isBoss());
 		
 	}
 	
 	
 	@Test
 	public void testIsEndangered(){
-		
-		
+		IAnimal mockAnimal=createMock();
+		assertEquals(false,mockAnimal.isEndangered());
 	}
 	
 	@Test
 	public void testIsSecret(){
-		
+		IAnimal mockAnimal=createMock();
+		assertEquals(false,mockAnimal.isSecret());
 		
 	}
 	

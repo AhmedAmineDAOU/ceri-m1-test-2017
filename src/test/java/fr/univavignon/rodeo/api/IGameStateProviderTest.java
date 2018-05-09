@@ -13,10 +13,12 @@ public class IGameStateProviderTest {
 	public void testSave() {
 
 	}
+	
 	@Test
 	public void  testExploreArea(){
 		
 	}
+	
 	@Test
 	public void testCatchAnimal(){
 		

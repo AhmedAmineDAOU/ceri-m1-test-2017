@@ -15,6 +15,7 @@ public class IGameStateTest {
 	public void testGetProgression(){
 		
 	}
+	
 	@Test 
 	public void testGetSpeciesLevel(){
 		
