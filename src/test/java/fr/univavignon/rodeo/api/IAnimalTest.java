@@ -50,7 +50,7 @@ public class IAnimalTest  {
 	@Test
 	public void testIsSecret(){
 		IAnimal mockAnimal=createMock();
-		assertEquals(false,mockAnimal.isSecret());
+		assertEquals(true,mockAnimal.isSecret());
 		
 	}
 	
