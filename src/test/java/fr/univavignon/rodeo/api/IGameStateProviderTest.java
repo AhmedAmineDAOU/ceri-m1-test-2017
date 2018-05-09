@@ -14,12 +14,11 @@ public class IGameStateProviderTest {
 
 	}
 	@Test
-	public void testExploreArea(){
+	public void  testExploreArea(){
 		
 	}
 	@Test
 	public void testCatchAnimal(){
-		
 		
 	}
 	
