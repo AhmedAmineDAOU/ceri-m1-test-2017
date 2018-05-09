@@ -5,7 +5,7 @@
 
 [![codecov](https://codecov.io/gh/AhmedAmineDAOU/ceri-m1-test-2017/branch/master/graphs/badge.svg)](https://codecov.io/gh/AhmedAmineDAOU/ceri-m1-test-2017)
 
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/c4aeae0001564d438d66e90cc8bc0213)](https://www.codacy.com/app/ceri-m1-test-2017/ceri-m1-test-2017?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=AhmedAmineDAOU/ceri-m1-test-2017&amp;utm_campaign=Badge_Grade)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/30a8a977273e4e9b9801ae6bbae8b0a8)](https://www.codacy.com/app/AhmedAmineDAOU/ceri-m1-test-2017?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=AhmedAmineDAOU/ceri-m1-test-2017&amp;utm_campaign=Badge_Grade)
 ## Resources
 
 ### Cours
