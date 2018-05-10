@@ -15,7 +15,7 @@ public class IEnvironmentTest {
 	
 	private static List<ISpecie> speciesList;
 	
-	public static IEnvironment getTestInstanceStatic(int testAreaNumber) {
+	public static IEnvironment createMock(int testAreaNumber) {
 		IEnvironment environmentTest = Mockito.mock(IEnvironment.class);
 		Mockito.when(environmentTest.getAreas()).thenReturn(testAreaNumber);
 		speciesList = new LinkedList<ISpecie>();
@@ -25,20 +25,16 @@ public class IEnvironmentTest {
 		return environmentTest;
 	}
 	
-	protected IEnvironment getTestInstance() {
-		return getTestInstanceStatic(3);
-	}
+	
 	
 	@Test
 	public void testGetAreas() {
-		IEnvironment test = getTestInstance();
-		assertEquals(test.getAreas(),3);
+		assertEquals(createMock(3).getAreas(),3);
 	}
 	
 	@Test
 	public void testGetSpecies() {
-		IEnvironment test = getTestInstance();
-		assertEquals(test.getSpecies(),speciesList);
+		assertEquals(createMock(3).getSpecies(),speciesList);
 	}
 	
 	

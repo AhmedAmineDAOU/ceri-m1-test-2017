@@ -8,17 +8,7 @@
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/30a8a977273e4e9b9801ae6bbae8b0a8)](https://www.codacy.com/app/AhmedAmineDAOU/ceri-m1-test-2017?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=AhmedAmineDAOU/ceri-m1-test-2017&amp;utm_campaign=Badge_Grade)
 ## Resources
 
-### Cours
 
-- [Slide#1](https://github.com/Faylixe/ceri-m2-test-2017/blob/master/docs/cours.pdf)
-
-### TP
-
-- [API javadoc](http://faylixe.fr/ceri-m1-test-2017/javadoc)
-- [TP1 : Setup the environment](https://github.com/Faylixe/ceri-m2-test-2017/blob/master/docs/tp1.md)
-- [TP2 : Continous integration and quality assesment](https://github.com/Faylixe/ceri-m2-test-2017/blob/master/docs/tp2.md)
-- [TP3 : Unit testing](https://github.com/Faylixe/ceri-m2-test-2017/blob/master/docs/tp3.md)
-- [TP4 : Implementing API](https://github.com/Faylixe/ceri-m2-test-2017/blob/master/docs/tp4.md)
 
 ### External
 

@@ -15,7 +15,7 @@ public class IEnvironmentProviderTest {
 	private static List<String> environmentsList;
 	private static IEnvironment environment;
 	
-	public static IEnvironmentProvider getTestInstanceStatic() {
+	public static IEnvironmentProvider createMock() {
 		
 		IEnvironmentProvider environmentProviderTest = Mockito.mock(IEnvironmentProvider.class);
 		
@@ -24,7 +24,7 @@ public class IEnvironmentProviderTest {
 		
 		Mockito.when(environmentProviderTest.getAvailableEnvironments()).thenReturn(environmentsList);
 		
-		environment = IEnvironmentTest.getTestInstanceStatic(4);
+		environment = IEnvironmentTest.createMock(4);
 		
 		Mockito.when(environmentProviderTest.getEnvironment("name")).thenReturn(environment);
 		Mockito.when(environmentProviderTest.getEnvironment(null)).thenThrow(new IllegalArgumentException());
@@ -36,14 +36,12 @@ public class IEnvironmentProviderTest {
 	
 	@Test
 	public void testGetAvailableEnvironments() {
-		IEnvironmentProvider test = getTestInstanceStatic();
-		assertEquals(test.getAvailableEnvironments(),environmentsList);
+		assertEquals(createMock().getAvailableEnvironments(),environmentsList);
 	}
 	
 	@Test
 	public void testgetEnvironment() {
-		IEnvironmentProvider test = getTestInstanceStatic();
-		assertEquals(test.getEnvironment("name"),environment);
+		assertEquals(createMock().getEnvironment("name"),environment);
 	}
 
 }
