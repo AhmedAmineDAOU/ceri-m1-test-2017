@@ -17,6 +17,10 @@ public class IAnimalTest  {
 		Mockito.when(iAnimal.isBoss()).thenReturn(boss);
 		return iAnimal;
 }
+	public IAnimal getMock() {
+		return createMock(1899,true,false,true);
+		
+	}
 	
 		
 
