@@ -1,3 +1,3 @@
 git add .
-git commit -m "message"
+git commit -m "INameObject"
 git push origin master

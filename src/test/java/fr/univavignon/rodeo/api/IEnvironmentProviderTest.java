@@ -17,20 +17,17 @@ public class IEnvironmentProviderTest {
 	
 	public static IEnvironmentProvider createMock() {
 		
-		IEnvironmentProvider environmentProviderTest = Mockito.mock(IEnvironmentProvider.class);
+		IEnvironmentProvider iEnvironmentProvider = Mockito.mock(IEnvironmentProvider.class);
 		
 		environmentsList = new LinkedList<String>();
 		environmentsList.add("list");
 		
-		Mockito.when(environmentProviderTest.getAvailableEnvironments()).thenReturn(environmentsList);
+		Mockito.when(iEnvironmentProvider.getAvailableEnvironments()).thenReturn(environmentsList);
 		
 		environment = IEnvironmentTest.createMock(4);
-		
-		Mockito.when(environmentProviderTest.getEnvironment("name")).thenReturn(environment);
-		Mockito.when(environmentProviderTest.getEnvironment(null)).thenThrow(new IllegalArgumentException());
-		
-		
-		return environmentProviderTest;
+		Mockito.when(iEnvironmentProvider.getEnvironment("name")).thenReturn(environment);
+		Mockito.when(iEnvironmentProvider.getEnvironment(null)).thenThrow(new IllegalArgumentException());
+		return iEnvironmentProvider;
 	}
 	
 	

@@ -10,46 +10,35 @@ import org.mockito.Mockito;
 public class IAnimalTest  {
 	
 	public static IAnimal createMock(int xp, boolean secret, boolean endagered, boolean boss) {
-		IAnimal animalMock = Mockito.mock(IAnimal.class);
-		Mockito.when(animalMock.getXP()).thenReturn(xp);
-		Mockito.when(animalMock.isSecret()).thenReturn(secret);
-		Mockito.when(animalMock.isEndangered()).thenReturn(endagered);
-		Mockito.when(animalMock.isBoss()).thenReturn(boss);
-		return animalMock;
+		IAnimal iAnimal = Mockito.mock(IAnimal.class);
+		Mockito.when(iAnimal.getXP()).thenReturn(xp);
+		Mockito.when(iAnimal.isSecret()).thenReturn(secret);
+		Mockito.when(iAnimal.isEndangered()).thenReturn(endagered);
+		Mockito.when(iAnimal.isBoss()).thenReturn(boss);
+		return iAnimal;
 }
 	
-	
-	protected IAnimal createMock(){
-		return createMock(1899,true,false,true);
-		
-	}
 		
 
 	@Test
 	public void testgetXP(){
-		IAnimal mockAnimal=createMock();
-		assertEquals(1899,mockAnimal.getXP());
-		
+		assertEquals(1899,createMock(1899,true,false,true).getXP());
 	}
 	
 	@Test
 	public void testIsBoss(){
-		IAnimal mockAnimal=createMock();
-		assertEquals(true,mockAnimal.isBoss());
-		
+		assertEquals(true,createMock(1899,true,false,true).isBoss());
 	}
 	
 	
 	@Test
 	public void testIsEndangered(){
-		IAnimal mockAnimal=createMock();
-		assertEquals(false,mockAnimal.isEndangered());
+		assertEquals(false,createMock(1899,true,false,true).isEndangered());
 	}
 	
 	@Test
 	public void testIsSecret(){
-		IAnimal mockAnimal=createMock();
-		assertEquals(true,mockAnimal.isSecret());
+		assertEquals(true,createMock(1899,true,false,true).isSecret());
 		
 	}
 	
