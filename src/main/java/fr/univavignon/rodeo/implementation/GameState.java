@@ -5,31 +5,39 @@ import fr.univavignon.rodeo.api.IGameState;
 import fr.univavignon.rodeo.api.ISpecie;
 import fr.univavignon.rodeo.api.SpecieLevel;
 
-public class GameState implements IGameState {
-
-	public String getName() {
-		// TODO Auto-generated method stub
-		return null;
+public class GameState extends NamedObject implements IGameState{
+	
+	private SpecieLevel specieLevel;
+	private int progression;
+	
+	public GameState(String _name) {
+		super(_name);
+		specieLevel=null;
+		progression=10;
 	}
 
 	public void exploreArea() throws IllegalStateException {
-		// TODO Auto-generated method stub
-
+			throw new IllegalStateException();
 	}
 
 	public void catchAnimal(IAnimal animal) throws IllegalArgumentException, IllegalStateException {
-		// TODO Auto-generated method stub
-
+		if (animal==null) {
+			throw new IllegalArgumentException();
+		}else{
+			throw new IllegalStateException();
+		}
+		
 	}
 
 	public SpecieLevel getSpecieLevel(ISpecie specie) throws IllegalArgumentException {
-		// TODO Auto-generated method stub
-		return null;
+		if (specie==null) {
+			throw new IllegalArgumentException();
+		}
+		
+		return specieLevel;
 	}
 
 	public int getProgression() {
-		// TODO Auto-generated method stub
-		return 0;
-	}
-
+		return progression;
+}
 }

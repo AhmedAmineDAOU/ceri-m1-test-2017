@@ -1,25 +1,29 @@
 package fr.univavignon.rodeo.implementation;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import fr.univavignon.rodeo.api.IAnimal;
 import fr.univavignon.rodeo.api.ISpecie;
 
-public class Specie implements ISpecie {
+public class Specie extends NamedObject implements ISpecie {
 
-	public String getName() {
-		// TODO Auto-generated method stub
-		return null;
+	private List<IAnimal> animals;
+	private int area;
+
+	public Specie(String nom,int areaa,List<IAnimal> animalList) {
+		super(nom);
+		animals =new ArrayList<IAnimal>();
+		area=areaa;
+		animals.addAll(animalList);
 	}
 
 	public int getArea() {
-		// TODO Auto-generated method stub
-		return 0;
+		return area;
 	}
 
 	public List<IAnimal> getAnimals() {
-		// TODO Auto-generated method stub
-		return null;
+		return animals;
 	}
 
 }
