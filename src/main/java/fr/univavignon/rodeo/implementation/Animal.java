@@ -6,6 +6,7 @@ public class Animal extends NamedObject implements IAnimal {
 	private boolean isBoss,isEndangered,isSecret;
 	private int xp;
 	
+	
 	public Animal(String nom, int experience,boolean isB,boolean isE,boolean isS) {
 		super(nom);
 		xp=experience;
