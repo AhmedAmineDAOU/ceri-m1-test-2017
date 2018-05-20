@@ -15,7 +15,7 @@ public class IEnvironmentProviderTest {
 	private static List<String> environmentsList;
 	private static IEnvironment environment;
 	
-	public static IEnvironmentProvider createMock() {
+	public IEnvironmentProvider createMock() {
 		
 		IEnvironmentProvider iEnvironmentProvider = Mockito.mock(IEnvironmentProvider.class);
 		

@@ -18,6 +18,6 @@ public class EnvironmentTest extends IEnvironmentTest{
 		animals.add(IAnimalTest.createMock(1899, true, false, true));				
 		List<ISpecie> species = new ArrayList<ISpecie>();
 		species.add(ISpecieTest.getTestInstanceStatic(3));
-		return new Environment( "myName", 1, species) ;
+		return new Environment( "EnvName", 1, species) ;
 	}
 }

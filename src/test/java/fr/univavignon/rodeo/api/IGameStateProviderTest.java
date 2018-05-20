@@ -9,7 +9,7 @@ public class IGameStateProviderTest {
 	
 	private static IGameState gameState;
 	
-	public static IGameStateProvider createMock() {
+	public  IGameStateProvider createMock() {
 		IGameStateProvider gameStateProvider = Mockito.mock(IGameStateProvider.class);
 		gameState = IGameStateTest.createMock();
 		Mockito.when(gameStateProvider.get("name")).thenReturn(gameState);

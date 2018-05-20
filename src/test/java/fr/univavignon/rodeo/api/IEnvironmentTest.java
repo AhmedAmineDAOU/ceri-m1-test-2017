@@ -24,6 +24,7 @@ public class IEnvironmentTest {
 		Mockito.when(environmentTest.getSpecies()).thenReturn(speciesList);
 		return environmentTest;
 	}
+	
 	public IEnvironment getIEnvironmentInstance() {
 		return createMock(4);
 		
