@@ -1,4 +1,4 @@
-# ceri-m2-test
+# ceri-m1-test
 # BINÔME: Ahmed Amine DAOU & Ayoub AICH
 
 [![CircleCI](https://circleci.com/gh/AhmedAmineDAOU/ceri-m1-test-2017/tree/master.svg?style=svg)](https://circleci.com/gh/AhmedAmineDAOU/ceri-m1-test-2017/tree/master)
